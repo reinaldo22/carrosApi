@@ -44,6 +44,15 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 
+		<!-- FIREBASE ADMIN -->
+		<dependency>
+			<groupId>com.google.firebase</groupId>
+			<artifactId>firebase-admin</artifactId>
+			<version>6.8.0</version>
+		</dependency>
+
+
+
 		<!-- MYSQL -->
 		<dependency>
 			<groupId>mysql</groupId>
@@ -57,6 +66,13 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		
+		<!-- Commons IO -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.6</version>
+		</dependency>
 
 		<!-- Security -->
 		<dependency>
@@ -66,6 +82,12 @@
 
 
 	</dependencies>
+	<repositories>
+		<repository>
+			<id>spring-repo</id>
+			<url>https://maven.google.com/</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>

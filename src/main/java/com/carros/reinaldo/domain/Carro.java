@@ -13,14 +13,28 @@ public class Carro {
 	private Long id;
 	private String nome;
 	private String tipo;
-
+	private String longitude;
+	private String latitude;
+	private String url_video;
+	private String url_foto;
+	private String descricao;
 	
 
-	public Carro(Long id, String nome, String tipo) {
+	public Carro(Long id, String nome, String tipo, String longitude, String latitude, String url_video,
+			String url_foto, String descricao) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.tipo = tipo;
+		this.longitude = longitude;
+		this.latitude = latitude;
+		this.url_video = url_video;
+		this.url_foto = url_foto;
+		this.descricao = descricao;
+	}
+
+	public Carro() {
+		super();
 	}
 
 	public Long getId() {
@@ -39,7 +53,6 @@ public class Carro {
 		this.nome = nome;
 	}
 
-	
 	public String getTipo() {
 		return tipo;
 	}
@@ -48,8 +61,44 @@ public class Carro {
 		this.tipo = tipo;
 	}
 
-	public Carro() {
-		super();
+	public String getLongitude() {
+		return longitude;
+	}
+
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
+	}
+
+	public String getLatitude() {
+		return latitude;
+	}
+
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+
+	public String getUrl_video() {
+		return url_video;
+	}
+
+	public void setUrl_video(String url_video) {
+		this.url_video = url_video;
+	}
+
+	public String getUrl_foto() {
+		return url_foto;
+	}
+
+	public void setUrl_foto(String url_foto) {
+		this.url_foto = url_foto;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
 	@Override
@@ -76,5 +125,6 @@ public class Carro {
 			return false;
 		return true;
 	}
+	
 
 }
