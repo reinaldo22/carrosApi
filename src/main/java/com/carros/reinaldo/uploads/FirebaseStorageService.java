@@ -26,7 +26,7 @@ public class FirebaseStorageService {
 
       if (FirebaseApp.getApps().isEmpty()) {
           InputStream in =
-                  FirebaseStorageService.class.getResourceAsStream("/carros-6376e-firebase-adminsdk-oa8os-1a3e2088ad.json");
+                  FirebaseStorageService.class.getResourceAsStream("/carros-6376e-firebase-adminsdk-oa8os-078c7100d7.json");
 
           System.out.println(in);
 
